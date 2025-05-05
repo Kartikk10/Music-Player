@@ -290,8 +290,7 @@ audio.addEventListener("ended", () => {
     if (nextSongExists) {
         playNextSong();
     } else {
-        userData.currentSong = null;
-        userData.songCurrentTime = 0;
+        playSong(userData?.songs[0].id);
     }
 });
 
